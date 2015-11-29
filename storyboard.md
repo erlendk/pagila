@@ -12,3 +12,11 @@
     git commit -m "Add storyboard.md"
     git push
 
+# Init Heroku side
+
+    # make a heroku account
+    # push "create a database" button
+    # zuccante-2015-16 :: silver :: postgresql-sinuous-6778
+    heroku login # type e-mail/password
+    heroku pg:psql --app zuccante-2015-16 HEROKU_POSTGRESQL_SILVER < pagila-0.10.1/pagila-schema.sql
+
